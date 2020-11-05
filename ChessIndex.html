@@ -6,24 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess For 2 players in browser</title>
     <meta Author="Aditya Sundaresan">
-    <link rel="stylesheet" href='/chessStyleMain.css'>
-    <script src="/chessScript.js"></script>
+    <link rel="stylesheet" href="chessStylemain.css">
 </head>
 
 <body>
     <section class="main container" id="fullViewport">
         <h1 class="container title" id="title">Chess! By Aditya.</h1>
-        <h2 class="container subtitle" id="subtitle"> New to chess? Find the rules<span><a href="https://en.wikipedia.org/wiki/Rules_of_chess">here!</a></span></h2>
+        <h2 class="container subtitle" id="subtitle">
+            New to chess? Find the rules <span><a href="https://en.wikipedia.org/wiki/Rules_of_chess">here!</a></span><br>
+            Find the sourcecode to this project <span><a href="https://github.com/AdiSundi/ChessInBrowser">here!</a></span>
+        </h2>
         <div class="container player1" id="player1">
             <div class="container player-name" id="player1name">player1namehere</div>
             <div class="container time" id="player1time">player1timehere</div>
         </div>
-        <div class="container chessboard " id="chessboard">chessboardhere</div>
+        <div class="container chessboard " id="chessboard">
+            <table class="chessboard">
+                <tr class="row8 row" id="row8">
+                    <td class="r8c1 col1" id="81"></td>
+                    <td class="r8c2 col2" id="82"></td>
+                    <td class="r8c3 col3" id="83"></td>
+                    <td class="r8c4 col4" id="84"></td>
+                    <td class="r8c5 col5" id="85"></td>
+                    <td class="r8c6 col6" id="86"></td>
+                    <td class="r8c7 col7" id="87"></td>
+                    <td class="r8c8 col8" id="88"></td>
+                </tr>
+                <tr class="row7 row" id="row7">
+                    <td class="r7c1 col1" id="71"></td>
+                    <td class="r7c2 col2" id="72"></td>
+                    <td class="r7c3 col3" id="73"></td>
+                    <td class="r7c4 col4" id="74"></td>
+                    <td class="r7c5 col5" id="75"></td>
+                    <td class="r7c6 col6" id="76"></td>
+                    <td class="r7c7 col7" id="77"></td>
+                    <td class="r7c8 col8" id="78"></td>
+                </tr>
+                <tr class="row6 row" id="row6">
+                    <td class="r6c1 col1" id="61"></td>
+                    <td class="r6c2 col2" id="62"></td>
+                    <td class="r6c3 col3" id="63"></td>
+                    <td class="r6c4 col4" id="64"></td>
+                    <td class="r6c5 col5" id="65"></td>
+                    <td class="r6c6 col6" id="66"></td>
+                    <td class="r6c7 col7" id="67"></td>
+                    <td class="r6c8 col8" id="68"></td>
+                </tr>
+                <tr class="row5 row" id="row5">
+                    <td class="r5c1 col1" id="51"></td>
+                    <td class="r5c2 col2" id="52"></td>
+                    <td class="r5c3 col3" id="53"></td>
+                    <td class="r5c4 col4" id="54"></td>
+                    <td class="r5c5 col5" id="55"></td>
+                    <td class="r5c6 col6" id="56"></td>
+                    <td class="r5c7 col7" id="57"></td>
+                    <td class="r5c8 col8" id="58"></td>
+                </tr>
+                <tr class="row4 row" id="row4">
+                    <td class="r4c1 col1" id="41"></td>
+                    <td class="r4c2 col2" id="42"></td>
+                    <td class="r4c3 col3" id="43"></td>
+                    <td class="r4c4 col4" id="44"></td>
+                    <td class="r4c5 col5" id="45"></td>
+                    <td class="r4c6 col6" id="46"></td>
+                    <td class="r4c7 col7" id="47"></td>
+                    <td class="r4c8 col8" id="48"></td>
+                </tr>
+                <tr class="row3 row" id="row3">
+                    <td class="r3c1 col1" id="31"></td>
+                    <td class="r3c2 col2" id="32"></td>
+                    <td class="r3c3 col3" id="33"></td>
+                    <td class="r3c4 col4" id="34"></td>
+                    <td class="r3c5 col5" id="35"></td>
+                    <td class="r3c6 col6" id="36"></td>
+                    <td class="r3c7 col7" id="37"></td>
+                    <td class="r3c8 col8" id="38"></td>
+                </tr>
+                <tr class="row2 row" id="row2">
+                    <td class="r2c1 col1" id="21"></td>
+                    <td class="r2c2 col2" id="22"></td>
+                    <td class="r2c3 col3" id="23"></td>
+                    <td class="r2c4 col4" id="24"></td>
+                    <td class="r2c5 col5" id="25"></td>
+                    <td class="r2c6 col6" id="26"></td>
+                    <td class="r2c7 col7" id="27"></td>
+                    <td class="r2c8 col8" id="28"></td>
+                </tr>
+                <tr class="row1 row" id="row1">
+                    <td class="r1c1 col1" id="11"></td>
+                    <td class="r1c2 col2" id="12"></td>
+                    <td class="r1c3 col3" id="13"></td>
+                    <td class="r1c4 col4" id="14"></td>
+                    <td class="r1c5 col5" id="15"></td>
+                    <td class="r1c6 col6" id="16"></td>
+                    <td class="r1c7 col7" id="17"></td>
+                    <td class="r1c8 col8" id="18"></td>
+                </tr>
+            </table>
+        </div>
         <div class="container player2" id="player2">
             <div class="container player-name" id="player2name">player2namehere</div>
             <div class="container time" id="player2time">player2timehere</div>
         </div>
     </section>
+    <script src="chessScript.js"></script>
 </body>
 
 </html>

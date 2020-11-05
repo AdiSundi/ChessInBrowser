@@ -1,0 +1,37 @@
+#full-viewport{
+    height: 100%;
+    width: 100%;
+}
+
+#chessboard{
+    padding-top:100%;
+    width:100%;
+    max-width:80vh;
+    position:relative;
+    margin:10px auto;
+    border:1px solid black;
+    padding:1px solid red;
+}
+
+table.chessboard{
+    position:absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    height:100%;
+    max-height: 80vh;
+    max-width:80vh;
+    width:100%;
+    border: 3% solid black;
+}
+
+
+/*next two are valid iff white is on top, black is at the bottom*/
+tr:nth-child(even) td:nth-child(even), tr:nth-child(odd) td:nth-child(odd) {
+    background: #ffffff;
+}
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+    background:#034720;
+}
